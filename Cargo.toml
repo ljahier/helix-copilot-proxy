@@ -1,0 +1,11 @@
+[package]
+name = "helix-copilot-proxy"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.48.0", default-features = false, features = ["rt-multi-thread", "macros", "io-std", "io-util", "process"] }
+serde = { version = "1.0.228", default-features = false, features = ["derive"] }
+serde_json = { version = "1.0.145", default-features = false, features = ["std"] }
+tracing = { version = "0.1.41", default-features = false, features = ["std"] }
+tracing-subscriber = { version = "0.3.20", default-features = false, features = ["fmt", "env-filter", "std"] }
